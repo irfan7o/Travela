@@ -78,3 +78,23 @@
 li {
     list-style: none;
 }
+
+a,
+img,
+span,
+button,
+ion-icon {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
