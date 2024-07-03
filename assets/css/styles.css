@@ -83,7 +83,7 @@ a,
 img,
 span,
 button,
-ion-icon {
+box-icon {
     display: block;
 }
 
@@ -97,4 +97,95 @@ button {
     background: none;
     border: none;
     font: inherit;
+}
+
+input {
+    width: 100%;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+box-icon {
+    pointer-events: none;
+}
+
+address {
+    font-style: normal;
+}
+
+html {
+    font-family: var(--ff-figtree);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-lavender-blush);
+    color: var(--text-granite-gray);
+    font-size: var(--fontSize-6);
+    line-height: 1.8;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-lavender-blush);
+    display: grid;
+    place-content: center;
+    z-index: 6;
+    transition: var(--transition-1);
+}
+
+.preloader.remove {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.preloader .img {
+    animation: bounce 800ms ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.preloader-inner {
+    position: relative;
+}
+
+.preloader-inner::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px;
+    background-color: var(--bg-black-alpha-20);
+    filter: blur(5px);
+    z-index: -1;
+    animation: dropShadow 800ms ease-in-out infinite alternate;
+}
+
+
+@keyframes dropShadow {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 80%;
+    }
 }

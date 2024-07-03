@@ -21,10 +21,68 @@
 </head>
 
 <body>
+    <!--LOADER-->
+    <div class="preloader" data-preloader>
+        <div class="preloader-inner">
+            <img src="assets/img/preloader.svg" width="50" height="50" alt="" class="img">
+        </div>
+    </div>
 
+    <!--HEADER-->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/img/logo.svg" width="187" height="38" alt="logo">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="assets/img/logo.svg" width="187" height="38" alt="logo">
+                    </a>
+
+                    <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+                        <box-icon name='x' aria-hidden="true"></box-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">About</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Services</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Pricing</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="header-action">
+                    <a href="#" class="login-btn">Login</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+
+            <button class="nav-toggle-btn" aria-label="open menu" data-nav-toggle>
+                <box-icon name='menu' aria-hidden="true"></box-icon>
+            </button>
+        </div>
+    </header>
 
 
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
