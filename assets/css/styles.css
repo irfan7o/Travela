@@ -129,6 +129,12 @@ body {
     line-height: 1.8;
 }
 
+body.nav-active {
+    overflow: hidden;
+}
+
+
+
 .container {
     padding-inline: 16px;
 }
@@ -148,6 +154,20 @@ body {
 
 .btn-primary {
     background-color: var(--bg-majorelle-blue);
+}
+
+.btn-primary:is(:hover, :focus-visible) {
+    background-color: var(--bg-ocean-blue);
+    box-shadow: var(--shadow-2);
+}
+
+.btn-secondary {
+    background-color: var(--bg-red-salsa);
+}
+
+.btn-secondary:is(:hover, :focus-visible) {
+    background-color: var(--bg-english-vermillion);
+    box-shadow: var(--shadow-3);
 }
 
 .preloader {
@@ -209,11 +229,6 @@ body {
     100% {
         width: 80%;
     }
-}
-
-
-.overlay {
-    display: none;
 }
 
 .header .container {
@@ -338,4 +353,21 @@ body {
 
 .login-btn:is(:hover, :focus-visible) {
     opacity: 0.8;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg-white);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-1);
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 0.5;
 }
