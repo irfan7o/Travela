@@ -170,6 +170,16 @@ body.nav-active {
     box-shadow: var(--shadow-3);
 }
 
+.section {
+    padding-block-end: var(--section-spacing);
+}
+
+.has-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .preloader {
     position: fixed;
     top: 0;
@@ -370,4 +380,8 @@ body.nav-active {
 .overlay.active {
     visibility: visible;
     opacity: 0.5;
+}
+
+.hero {
+    padding-block-start: 150px;
 }
