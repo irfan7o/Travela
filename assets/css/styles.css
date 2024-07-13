@@ -220,6 +220,16 @@ body.nav-active {
     text-transform: uppercase;
 }
 
+.section-title {
+    margin-block: 10px;
+}
+
+.section-subtitle {
+    color: var(--text-majorelle-blue);
+    font-weight: var(--weight-medium);
+    text-transform: uppercase;
+}
+
 .preloader {
     position: fixed;
     top: 0;
